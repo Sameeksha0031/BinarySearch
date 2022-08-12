@@ -43,32 +43,4 @@ public class BinaryTree<T extends Comparable> {
 
 	}
 
-	public boolean search(T key) {
-		return search(root, key);
-	}
-
-	public boolean search(BinaryTreeNode root2, T key) {
-		if (root2 == null) {
-			return false;
-		}
-		if (root2.data == key) {
-			return true;
-		}
-		boolean res1 = search(root2.left, key);
-		if(res1) return false;
-		
-		boolean res2 = search(root2.right, key);
-		return res2;
-	}
-
-	/*
-	 * public void search(BinaryTreeNode root2, T data) { root2.setData(data);
-	 * if(data.compareTo(root.getData()) == 0) { System.out.println(data+" root"); }
-	 * if(data.compareTo(root.right) == 1) { System.out.println(data +" Right");
-	 * search(root2.right,data); } if(data.compareTo(root.left) == -1) {
-	 * System.out.println(data+ " Left"); search(root2.left,data); }
-	 * 
-	 * }
-	 */
-
 }
