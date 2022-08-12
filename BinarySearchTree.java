@@ -17,11 +17,5 @@ public class BinarySearchTree<T> {
 			bst.inorder();
 			ch++;
 		}while(ch < 4);
-		System.out.println("Enter the value to be search");
-		Integer data = sc.nextInt();
-		if(bst.search(data))
-			System.out.println("yes");
-		else
-			System.out.println("No");
 	}
 }
